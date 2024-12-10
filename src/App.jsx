@@ -1,10 +1,13 @@
 import React from 'react'
+import AboutUs from './components/AboutUs'
+import Team from './components/Team'
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <AboutUs />
+      <Team />
+    </>
   )
 }
 
