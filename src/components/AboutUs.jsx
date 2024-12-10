@@ -1,6 +1,6 @@
 function AboutUs() {
   return (
-    <div className='flex flex-col justify-start items-center dark:bg-black bg-white p-8'>
+    <div className='flex flex-col justify-start items-center dark:bg-black bg-white p-8 mt-28'>
         <h1 className='text-4xl sm:text-6xl uppercase font-black dark:text-white text-black mb-4 md:mb-8 md:text-8xl '>About Us</h1>
         <div className='flex flex-col md:flex-row justify-between md:items-start mb-16 w-full h-1/2'>
             <h2 className='text-2xl text-center md:text-left sm:text-4xl md:text-5xl lg:text-6xl dark:text-white text-black mb-4 md:mb-0 md:mr-8 font-bold md:pb-4'>Together we STRIVE,<br />together we ACHIEVE</h2>
