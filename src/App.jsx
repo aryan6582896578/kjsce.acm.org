@@ -8,10 +8,14 @@ import "./App.css"
 function App() {
   return (
     <>
-      <Navbar />
-      <AboutUs />
-      <Team />
-      <Footer/>
+      <div className="main">
+        <div className=' container mx-auto'>
+          <Navbar />
+          <AboutUs />
+          <Team />
+          <Footer/>
+        </div>
+      </div>
     </>
   )
 }
