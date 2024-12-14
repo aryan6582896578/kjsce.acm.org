@@ -8,7 +8,7 @@ import "./App.css"
 function App() {
   return (
     <>
-      <div className="main">
+      <div className="w-full h-full overflow-hidden">
         <div className=' container mx-auto'>
           <Navbar />
           <AboutUs />
