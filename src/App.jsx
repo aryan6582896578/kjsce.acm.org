@@ -15,7 +15,6 @@ function App() {
         <div className=' container mx-auto'>
           <Navbar />
           <Hero/>
-          <Earth />
           <AboutUs />
           <ContactUs/>
           <Team />
