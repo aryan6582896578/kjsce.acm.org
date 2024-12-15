@@ -30,7 +30,7 @@ const Navbar = () => {
                     h-[65px] 
                     ${isScrolled 
                         ? 'w-[60vw]' // Narrow width when scrolled
-                        : 'w-[96vw] '} // Full width at top
+                        : 'w-[90vw] '} // Full width at top
                     backdrop-filter 
                     backdrop-blur-md 
                     bg-[rgba(255, 255, 255, 0.2)] 

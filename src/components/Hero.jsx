@@ -16,11 +16,11 @@ export function Earth() {
 
 function Hero() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center mt-20">
+    <div id = "home" className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center mt-20">
       <div className="space-y-6">
-      <div className="text-7xl text-white font-bold">
-        We are,
-      </div>
+        <div className="text-4xl text-white font-bold">
+          We are,
+        </div>
         <div className="">
           <img 
             src="logo_withoutbg.png" 
@@ -28,8 +28,15 @@ function Hero() {
             className="w-full h-64 object-cover"
           />
         </div>
+        <div className="text-center">
+          <p className="text-white text-xl">
+            Curious to find out what we do?
+          </p>
+          <p className="text-gray-300 text-sm mt-2">
+            Scroll down to find out
+          </p>
+        </div>
       </div>
-      
       
       <div className="h-[40rem] w-full relative">
         <div className="absolute w-full h-full">
