@@ -29,8 +29,8 @@ const Navbar = () => {
                     z-20 
                     h-[65px] 
                     ${isScrolled 
-                        ? 'w-[70vw]' // Narrow width when scrolled
-                        : 'w-full '} // Full width at top
+                        ? 'w-[60vw]' // Narrow width when scrolled
+                        : 'w-[96vw] '} // Full width at top
                     backdrop-filter 
                     backdrop-blur-md 
                     bg-[rgba(255, 255, 255, 0.2)] 
@@ -55,7 +55,6 @@ const Navbar = () => {
                     transition-all 
                     duration-300 
                     ease-in-out 
-                    ${isScrolled ? 'scale-75' : 'scale-100'}
                 `}>
                     <img
                         className="h-32 m-5 cursor-pointer origin-left"
