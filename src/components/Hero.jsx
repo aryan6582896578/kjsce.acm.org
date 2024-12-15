@@ -14,7 +14,7 @@ export function Earth() {
   );
 }
 
-const Hero = () => {
+function Hero() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center mt-20">
       <div className="space-y-6">
