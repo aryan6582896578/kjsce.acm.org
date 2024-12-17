@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Tech Conference",
+    "date": "2023-11-15",
+    "description": "Join us for insights into the latest tech trends. Engage with industry leaders and innovators as they discuss groundbreaking technologies, emerging tools, and strategies to succeed in the ever-evolving tech landscape. Network with professionals, attend insightful sessions, and explore opportunities that will shape the future of technology."
+  },
+  {
+    "title": "Hackathon 2023",
+    "date": "2023-12-05",
+    "description": "Collaborate and innovate at our annual hackathon. Join fellow developers, designers, and tech enthusiasts in an intense 48-hour coding marathon. Bring your ideas to life, tackle real-world challenges, and push the boundaries of technology. Compete for prizes, recognition, and the opportunity to make a lasting impact."
+  },
+  {
+    "title": "AI Workshop",
+    "date": "2024-01-20",
+    "description": "Learn the basics of artificial intelligence in a day. This hands-on workshop introduces you to AI concepts, machine learning algorithms, and practical applications. Perfect for beginners and professionals seeking to understand how AI can be leveraged in various industries to drive innovation and efficiency."
+  },
+  {
+    "title": "Web Dev Bootcamp",
+    "date": "2024-02-10",
+    "description": "Build modern web applications from scratch. Over the course of this bootcamp, you will learn front-end and back-end development, work with popular frameworks, and understand best practices in web design. Ideal for aspiring web developers looking to create responsive, user-friendly websites and applications."
+  },
+  {
+    "title": "Networking Night",
+    "date": "2024-03-05",
+    "description": "Connect with professionals across the tech industry. This event offers a relaxed atmosphere to meet innovators, entrepreneurs, and leaders. Expand your network, share ideas, and discover new opportunities. Whether you are looking for collaborations or seeking new insights, this is the perfect setting."
+  },
+  {
+    "title": "Startup Pitch Day",
+    "date": "2024-04-15",
+    "description": "Pitch your ideas to potential investors and mentors. This event provides a platform for startups and entrepreneurs to showcase their projects. Receive valuable feedback, gain exposure, and possibly secure funding. It's an excellent opportunity to take your startup to the next level."
+  }
+]
