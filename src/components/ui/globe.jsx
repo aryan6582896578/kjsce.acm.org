@@ -173,8 +173,19 @@ export function World(props) {
   const { globeConfig } = props;
   const scene = new Scene();
   scene.fog = new Fog(0xffffff, 400, 2000);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
+    console.log(isMobileDevice);
+    setIsMobile(isMobileDevice);
+  }, []);
+
   return (
-    (<Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
+    (<Canvas
+      style={{ width: '100%', height: '100%' }}
+      scene={scene}
+      camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
       <WebGLRendererConfig />
       <ambientLight color={globeConfig.ambientLight} intensity={0.6} />
       <directionalLight
@@ -189,14 +200,16 @@ export function World(props) {
         intensity={0.8} />
       <Globe {...props} />
       <OrbitControls
-        enablePan={false}
+        enablePan={!isMobile}
         enableZoom={false}
+        enableRotate={!isMobile}
         minDistance={cameraZ}
         maxDistance={cameraZ}
         autoRotateSpeed={1}
         autoRotate={true}
         minPolarAngle={Math.PI / 3.5}
-        maxPolarAngle={Math.PI - Math.PI / 3} />
+        maxPolarAngle={Math.PI - Math.PI / 3}
+         />
     </Canvas>)
   );
 }

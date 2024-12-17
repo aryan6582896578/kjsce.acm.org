@@ -16,7 +16,7 @@ export function Earth() {
 
 function Hero() {
   return (
-    <div id = "home" className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center mt-20">
+    <div id = "home" className="max-w-7xl mx-auto px-4 md:py-0 py-16git  grid md:grid-cols-2 gap-8 items-center mt-20">
       <div className="space-y-6">
         <div className="text-4xl text-white font-bold">
           We are,
@@ -38,11 +38,12 @@ function Hero() {
         </div>
       </div>
       
-      <div className="h-[40rem] w-full relative">
-        <div className="absolute w-full h-full">
+      <div className="lg:h-[40rem] md:h-[30rem] h-[20rem] w-full relative">
+        <div className="absolute w-full h-full md:scale-100 scale-125">
           <Earth />
         </div>
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+        <div className="absolute w-full h-full md:scale-100 scale-125 bg-transparent md:hidden"></div>
+        <div className="absolute w-full h-1/2 md:scale-100 scale-125 -bottom-8 inset-x-0 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
       </div>
     </div>
   );
