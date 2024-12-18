@@ -57,7 +57,7 @@ const Navbar = () => {
                     ease-in-out 
                 `}>
                     <img
-                        className="h-32 m-5 cursor-pointer origin-left"
+                        className="h-14 m-5 cursor-pointer origin-left"
                         src="logo_withoutbg.png"
                         alt="logo"
                     />
