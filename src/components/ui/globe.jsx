@@ -200,7 +200,7 @@ export function World(props) {
         intensity={0.8} />
       <Globe {...props} />
       <OrbitControls
-        enablePan={!isMobile}
+        enablePan={false}
         enableZoom={false}
         enableRotate={!isMobile}
         minDistance={cameraZ}

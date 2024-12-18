@@ -18,7 +18,6 @@ function App() {
           <AboutUs />
           <Event />
           <Team />
-          <ContactUs/>
           <Footer/>
           {/* <div className="h-64 w-20 bg-blue-600 blur-[90px] absolute top-64 mt-96 left-0"></div> div for blur blue */}
 

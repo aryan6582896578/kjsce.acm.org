@@ -4,7 +4,7 @@ import events from '../data/events.json'
 function Event() {
   return (
     <div className='flex flex-col justify-center items-center p-8 md:mt-8 mt-4'>
-      <h1 className='text-4xl uppercase font-black dark:text-white text-black md:px-8 mb-4 md:mb-8 border-t-cyan-400 border-t-2'>Our Events</h1>
+      <h1 className='text-4xl uppercase font-black dark:text-white text-black md:px-8 mb-4 pb-4 md:mb-8 border-b-cyan-400 border-b-2'>Our Events</h1>
         {
             events.map((event, index) => (
             <div key={index} className='flex flex-col md:flex-row rounded-2xl w-full mb-8'>

@@ -33,6 +33,8 @@ function Hero() {
           <Suspense fallback={<div className="text-white">Loading...</div>}>
             <World data={sampleArcs} globeConfig={globeConfig} />
           </Suspense>
+          <div className="absolute top-0 md:hidden h-[20rem] w-full bg-transparent"/>
+
         </div>
       </div>
     </WavyBackground>

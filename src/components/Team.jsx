@@ -15,7 +15,7 @@ function Team() {
       id="our-team"
       className="flex flex-col justify-center items-center p-8"
     >
-      <div className="text-4xl uppercase font-black dark:text-white text-black px-8 mb-4 md:mb-16 border-t-cyan-400 border-t-2">
+      <div className="text-4xl uppercase font-black dark:text-white text-black px-8 pb-4 mb-4 md:mb-16 border-b-cyan-400 border-b-2">
         Our Team
       </div>
       <div className="relative w-full md:h-[450px] h-full flex md:flex-row flex-col justify-center items-center text-4xl mb-16 gap-4">
