@@ -33,7 +33,9 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
                 <p className="text-gray-700">{selectedMember.info}</p>
               </div>
             ) : (
-              "Tech Team"
+              <>
+                {team.teamName}
+              </>
             )}
           </div>
   
