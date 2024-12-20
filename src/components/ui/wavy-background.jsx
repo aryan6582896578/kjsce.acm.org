@@ -15,12 +15,9 @@ export const WavyBackground = ({
 
   let canvas, ctx, w, h, nt;
   const waveColors = colors || [
-    "#ffffff",  // Blue Violet
-    "#6A5ACD",  // Slate Blue
-    "#4682B4",  // Steel Blue
-    "#5F9EA0",  // Cadet Blue
-    "#F0F8FF",  // Alice Blue
-    "#E6E6FA",  // Lavender
+    "#0000FF", "#0000CD", "#00008B", "#000080", "#191970", "#4169E1",
+    "#4682B4", "#5F9EA0", "#6495ED", "#87CEEB", "#87CEFA", "#ADD8E6",
+    "#B0C4DE", "#B0E0E6", "#AFEEEE", "#E0FFFF", "#F0F8FF", "#E6E6FA"
   ];
 
   const getSpeed = () => {

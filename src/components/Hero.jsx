@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { WavyBackground } from "./ui/wavy-background";
 import sampleArcs from "../data/SampleArcs";
 import globeConfig from "../data/GlobeConfig";
+import "./styles/Hero.css"
 
 const World = React.lazy(() => import("./ui/globe"));
 
@@ -9,14 +10,17 @@ function Hero() {
   return (
     <WavyBackground className="max-w-7xl mx-auto px-4 py-16 mt-64 md:mt-0">
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Left Side: Text Content */}
+        <div className="flex absolute top-0 left-0 w-full">
+        <div className="glow"></div>
+        </div>
         <div className="text-white text-center lg:text-left">
           <div className="flex justify-center items-center">
             <img className="w-52 md:w-44" src="logo_withoutbg.png" alt="" />
           </div>
-          <div className="text-4xl md:text-9xl lg:text-6xl font-bold mb-6">
-            We are KJSCE - <span className="text-blue-800">ACM</span>
+          <div className="text-4xl md:text-9xl lg:text-6xl font-bold mb-6 mt-2 ">
+            We are KJSCE - <span className="text-blue-300">ACM</span>
           </div>
 
 

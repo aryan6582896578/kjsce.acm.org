@@ -1,0 +1,22 @@
+.glow {
+    position: absolute;
+    top: calc(50% - 30rem);
+    left: calc(50% - 15rem);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+      0 0 60px 30px #fff,
+      0 0 100px 60px rgb(0, 34, 255),
+      0 0 140px 90px #0ff;
+  }
+
+@media screen and (max-width: 768px) {
+    .glow {
+        top: calc(50% - 20rem);
+        left: calc(50% - 9rem);
+        width: 300px;
+        height: 300px;
+    }
+}
