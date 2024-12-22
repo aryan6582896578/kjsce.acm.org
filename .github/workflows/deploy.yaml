@@ -22,16 +22,20 @@ jobs:
         id: cache-node-modules
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-v1
       - name: 🔨 Install Dependencies
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: |
           npm install
         env:
-         NODE_OPTIONS: "--max_old_space_size=4096"
-         CI: false
+          NODE_OPTIONS: "--max_old_space_size=4096"
+          CI: false
+      - name: Verify Installed Node.js Version
+        run: node -v
       - name: 🏗 Build Project
-        run: npm run build
+        run: npm run build --verbose
+      - name: Verify Build Output
+        run: ls -la dist/
       - name: 📂 Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
