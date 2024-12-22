@@ -13,7 +13,7 @@ function Hero() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Left Side: Text Content */}
         <div className="flex absolute top-0 left-0 w-full">
-        <div className="glow"></div>
+        {/* <div className="glow"></div> */}
         </div>
         <div className="text-white text-center lg:text-left">
           <div className="flex justify-center items-center">
