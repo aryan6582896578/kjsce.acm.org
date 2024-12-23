@@ -8,7 +8,7 @@ const World = React.lazy(() => import("./ui/globe"));
 
 function Hero() {
   return (
-    <WavyBackground className="max-w-7xl mx-auto px-4 py-16 mt-64 md:mt-0">
+    <WavyBackground className="max-w-7xl mx-auto px-4 py-16 sm:mt-64 md:mt-96 mt-72 lg:mt-0">
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Left Side: Text Content */}
@@ -19,8 +19,8 @@ function Hero() {
           <div className="flex justify-center items-center">
             <img className="w-52 md:w-44" src="logo_withoutbg.png" alt="" />
           </div>
-          <div className="text-4xl md:text-9xl lg:text-6xl font-bold mb-6 mt-2 ">
-            We are KJSCE - <span className="text-blue-300">ACM</span>
+          <div className="text-4xl md:text-5xl lg:text-6xl font-bold mb:mb-6 md:mt-2 mt-8 opacity-90">
+            We are KJSCE - <span className="text-blue-300 opacity-100">ACM</span>
           </div>
 
 

@@ -1,5 +1,5 @@
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 const TeamCard = ({cardRef,team, imagesRef,index}) => {
@@ -14,23 +14,35 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
         { opacity: 0, y: 20 },
         { opacity: 1, y: 0, duration: 0.5 }
       );
-  
-      setTimeout(() => {
-        setSelectedMember(null);
-      }, 5000);
     };
+
+    useEffect(
+      () => {
+        let timer1 = setTimeout(() => setSelectedMember(null), 5 * 1000);
+        return () => {
+          clearTimeout(timer1);
+        };
+      },[selectedMember]
+    );
+
+
   
     return (
-      <>
-        <div className="box w-full h-96 bg-gray-800 flex items-center relative mt-5">
+      <div className="md:px-16">
+        <div className="box w-full h-96 bg-gray-800 flex items-center relative mt-5 rounded-2xl">
           <div
-            className="bg-white h-full md:w-full flex justify-center items-center text-2xl p-4 text-center"
+            className="bg-white h-full md:w-full flex justify-center items-center text-2xl p-4 text-center rounded-l-2xl "
             ref={(el) => (cardRef.current[index] = el)}
           >
             {selectedMember !== null ? (
               <div>
                 <h2 className="font-bold text-xl">{selectedMember.name}</h2>
                 <p className="text-gray-700">{selectedMember.info}</p>
+                <p className="text-gray-700"><a href={`${selectedMember.github}`}>Github</a></p>
+                <p className="text-gray-700"><a href={`${selectedMember.leetcode}`}>Leetcode</a></p>
+                <p className="text-gray-700"><a href={`${selectedMember.codechef}`}>Codechef</a></p>
+                <p className="text-gray-700"><a href={`${selectedMember.codeforces}`}>Codeforces</a></p>
+                <p className="text-gray-700"><a href={`${selectedMember.linkedin}`}>Linkedin</a></p>
               </div>
             ) : (
               <>
@@ -63,7 +75,7 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   };
 
