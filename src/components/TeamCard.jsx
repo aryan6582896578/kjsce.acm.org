@@ -1,11 +1,11 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import LinkedinIcon from "../assets/linkedin.svg";
-import CodechefIcon from "../assets/cc.svg";
-import CodeforcesIcon from "../assets/cfc.svg";
-import LeetcodeIcon from "../assets/leetcode.svg";
-import GithubIcon from "../assets/github.svg";
+import LinkedinIcon from "/assets/linkedin.svg";
+import CodechefIcon from "/assets/cc.svg";
+import CodeforcesIcon from "/assets/cfc.svg";
+import LeetcodeIcon from "/assets/leetcode.svg";
+import GithubIcon from "/assets/github.svg";
 
 const TeamCard = ({cardRef,team, imagesRef,index}) => {
     const [selectedMember, setSelectedMember] = useState(null);
@@ -34,7 +34,7 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
   
     return (
       <div className="md:px-16">
-        <div className="box w-full h-96 bg-blue-500 flex items-center relative mt-5 rounded-2xl">
+        <div className="box w-full h-[30rem] bg-blue-500 flex items-center relative mt-5 rounded-2xl">
           <div
             className="bg-blue-900 text-white h-full md:w-full flex justify-center items-center text-2xl p-4 text-center rounded-l-2xl "
             ref={(el) => (cardRef.current[index] = el)}
@@ -52,7 +52,7 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
                 </div>
               </div>
             ) : (
-              <div className="text-5xl font-bold">
+              <div className="sm:text-4xl text-2xl font-bold">
                 {team.teamName}
               </div>
             )}

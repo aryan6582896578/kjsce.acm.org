@@ -95,7 +95,7 @@ const teams =
             {
                 "firstName": "Om",
                 "lastName": "Thanage",
-                "img": "src/assets/Tech_Team_Om_Thanage.jpg",
+                "img": "/assets/Tech_Team_Om_Thanage.jpg",
                 "info": {
                     "role": "Tech Team Memeber",
                     "codechef": "https://www.codechef.com/users/omitron",
@@ -126,6 +126,42 @@ const teams =
                     "github": "https://github.com/yash-shj",
                     "leetcode": "https://leetcode.com/pluto-lc/",
                     "codeforces": "https://codeforces.com/profile/pluto09"
+                }
+            },
+            {
+                "firstName": "Aryan",
+                "lastName": "Movalia",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-Tech Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
+                }
+            },
+            {
+                "firstName": "Rayan",
+                "lastName": "Memon",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-Tech Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
+                }
+            },
+            {
+                "firstName": "Nikunj",
+                "lastName": "Rathi",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-Tech Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
                 }
             }
         ]
@@ -180,6 +216,30 @@ const teams =
                     "leetcode": "https://leetcode.com/username/",
                     "codeforces": "https://codeforces.com/profile/username"
                 }
+            },
+            {
+                "firstName": "Sai",
+                "lastName": "Bhadane",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-Creative Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
+                }
+            },
+            {
+                "firstName": "Samridha",
+                "lastName": "Das",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-Creative Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
+                }
             }
         ]
     },
@@ -216,6 +276,30 @@ const teams =
                 "img": "https://via.placeholder.com/150",
                 "info": {
                     "role": "Marketing Team Memeber",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
+                }
+            },
+            {
+                "firstName": "Rishi",
+                "lastName": "Dadia",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-Marketing Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
+                }
+            },
+            {
+                "firstName": "Shrish",
+                "lastName": "Alva",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-Marketing Team",
                     "codechef": "https://www.codechef.com/users/hardy_elephant",
                     "github": "https://github.com/partht0902",
                     "leetcode": "https://leetcode.com/username/",
@@ -261,6 +345,30 @@ const teams =
                     "github": "https://github.com/SuryanshuBanerjee",
                     "leetcode": "https://leetcode.com/SuryanshuBanerjee/",
                     "codeforces": "https://codeforces.com/profile/GhostFace_S"
+                }
+            },
+            {
+                "firstName": "Netal",
+                "lastName": "Gupta",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-PR Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
+                }
+            },
+            {
+                "firstName": "Parth",
+                "lastName": "Panwar",
+                "img": "https://via.placeholder.com/150",
+                "info": {
+                    "role": "FY Rep-PR Team",
+                    "codechef": "https://www.codechef.com/users/hardy_elephant",
+                    "github": "https://github.com/partht0902",
+                    "leetcode": "https://leetcode.com/username/",
+                    "codeforces": "https://codeforces.com/profile/username"
                 }
             }
         ]
@@ -310,119 +418,6 @@ const teams =
                 "img": "https://via.placeholder.com/150",
                 "info": {
                     "role": "Operations Team Member",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            }
-        ]
-    },
-    {
-        "teamName":"FY Reps",
-        "members":[
-            {
-                "firstName": "Aryan",
-                "lastName": "Movalia",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-Tech Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Rayan",
-                "lastName": "Memon",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-Tech Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Nikunj",
-                "lastName": "Rathi",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-Tech Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Sai",
-                "lastName": "Bhadane",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-Creative Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Samridha",
-                "lastName": "Das",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-Creative Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Rishi",
-                "lastName": "Dadia",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-Marketing Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Shrish",
-                "lastName": "Alva",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-Marketing Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Netal",
-                "lastName": "Gupta",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-PR Team",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
-                    "leetcode": "https://leetcode.com/username/",
-                    "codeforces": "https://codeforces.com/profile/username"
-                }
-            },
-            {
-                "firstName": "Parth",
-                "lastName": "Panwar",
-                "img": "https://via.placeholder.com/150",
-                "info": {
-                    "role": "FY Rep-PR Team",
                     "codechef": "https://www.codechef.com/users/hardy_elephant",
                     "github": "https://github.com/partht0902",
                     "leetcode": "https://leetcode.com/username/",
