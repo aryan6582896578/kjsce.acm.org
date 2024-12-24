@@ -29,10 +29,11 @@ function Team2() {
 
       gsap.to(imagesRef.current[index], {
         opacity: 1,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
-          trigger: imagesRef.current[index],
+          trigger: cardRef.current[index],
           start: "top+=10rem center",
+          end: "top+=100rem center",
           scrub: 0.02,
           markers: false,
         },
@@ -44,7 +45,7 @@ function Team2() {
 
   return (
     <>
-      <div className="my-5 h-full flex flex-col">
+      <div id = "our-team" className="my-5 h-full flex flex-col">
         <div className="flex items-center w-full justify-center">
           <h1 className="text-4xl uppercase font-black dark:text-white text-black md:px-8 mb-4 pb-4 md:mb-8 border-b-cyan-400 border-b-2 title">
             Our Team

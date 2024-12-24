@@ -3,8 +3,9 @@ on:
   push:
     branches:
       - main
+
 jobs:
-  FTP-Deploy-Action:
+  Deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
 
@@ -13,16 +14,19 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 2
+
       - name: Use Node.js 18
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+
       - name: Cache npm dependencies
         uses: actions/cache@v3
         id: cache-node-modules
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-v1
+
       - name: 🔨 Install Dependencies
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: |
@@ -30,19 +34,28 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           CI: false
+
       - name: Verify Installed Node.js Version
         run: node -v
-      - name: 🏗 Build Project
-        run: npm run build --verbose
-      - name: Verify Build Output
-        run: ls -la dist/
-      - name: 📂 Sync folders and files to the server
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+
+      - name: 📂 Deploy to Server
+        uses: appleboy/ssh-action@v0.1.8
         with:
-          protocol: ftp
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/
-
-
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            source ~/.nvm/nvm.sh
+            cd public_html
+            rm -rf ./*
+            mkdir tmp
+            cd tmp
+            git clone git@github.com:ACM-KJSCE/ACM-Website.git
+            cd ACM-Website/
+            npm i
+            npm run build
+            cd ../..
+            mv ./tmp/ACM-Website/dist/* ./
+            rm -rf tmp
+            echo "Hurray Website Deployed"

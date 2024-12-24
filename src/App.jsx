@@ -13,14 +13,12 @@ function App() {
       <div className="w-full h-full overflow-hidden">
         <div className=' container mx-auto'>
           <Navbar />
-          <Hero/>
+          <Hero />
           <AboutUs />
           <Event />
           {/* <Team /> */}
-          <Team2/>
-          <Footer/>
-          {/* <div className="h-64 w-20 bg-blue-600 blur-[90px] absolute top-64 mt-96 left-0"></div> div for blur blue */}
-
+          <Team2 />
+          <Footer />
         </div>
       </div>
     </>
