@@ -147,9 +147,9 @@ const teams =
                 "info": {
                     "role": "FY Rep-Tech Team",
                     "codechef": "https://www.codechef.com/users/rayanmemon",
-                    "github": "https://github.com/username",
-                    "leetcode": "https://leetcode.com/u/username",
-                    "codeforces": "https://codeforces.com/profile/username"
+                    "github": "https://github.com/Rayanmemon",
+                    "leetcode": "https://leetcode.com/u/Rayan_Memon",
+                    "codeforces": "https://codeforces.com/profile/Rayan_14"
                 }
             },
             {
@@ -318,8 +318,8 @@ const teams =
                 "info": {
                     "role": "PR Head",
                     "codechef": "https://www.codechef.com/users/username",
-                    "github": "https://github.com/tejashyamehta ",
-                    "leetcode": "https://leetcode.com/u/username",
+                    "github": "https://github.com/bhoomins ",
+                    "leetcode": "https://leetcode.com/u/bhoomisanghvi",
                     "codeforces": "https://codeforces.com/profile/username"
                 }
             },
@@ -394,10 +394,10 @@ const teams =
                 "img": "/assets/Operations_Team_Vedant_Walunj.jpg",
                 "info": {
                     "role": "Operations Team Member",
-                    "codechef": "https://www.codechef.com/users/surabhie09",
-                    "github": "https://github.com/surabhie09",
+                    "codechef": "https://www.codechef.com/users/vedantwalunj",
+                    "github": "https://github.com/vedant1317",
                     "leetcode": "https://leetcode.com/u/username",
-                    "codeforces": "https://codeforces.com/profile/surabhie09"
+                    "codeforces": "https://codeforces.com/profile/vedantwalunj1317"
                 }
             },
             {
@@ -406,8 +406,8 @@ const teams =
                 "img": "/assets/Operation_team_Palak_Chandak.png",
                 "info": {
                     "role": "Operations Team Member",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
+                    "codechef": "https://www.codechef.com/users/aided_goal_99",
+                    "github": "https://github.com/palakchandak8",
                     "leetcode": "https://leetcode.com/u/username",
                     "codeforces": "https://codeforces.com/profile/username"
                 }
@@ -418,8 +418,8 @@ const teams =
                 "img": "/assets/Operations_Team_Anushka.jpg",
                 "info": {
                     "role": "Operations Team Member",
-                    "codechef": "https://www.codechef.com/users/hardy_elephant",
-                    "github": "https://github.com/partht0902",
+                    "codechef": "https://www.codechef.com/users/username",
+                    "github": "https://github.com/anushkashekhar1 ",
                     "leetcode": "https://leetcode.com/u/username",
                     "codeforces": "https://codeforces.com/profile/username"
                 }
