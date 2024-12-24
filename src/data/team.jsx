@@ -44,7 +44,7 @@ const teams =
                 "lastName": "Rode",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Vice Chairperson",
+                    "role": "Treasurer",
                     "codechef": "https://www.codechef.com/users/username",
                     "github": "https://github.com/asmirode",
                     "leetcode": "https://leetcode.com/a_1824/",
@@ -85,7 +85,7 @@ const teams =
                 "lastName": "Pawar",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Tech Team Memeber",
+                    "role": "Tech Team Member",
                     "codechef": "https://www.codechef.com/users/viraj-ap",
                     "github": "https://github.com/viraj-ap",
                     "leetcode": "https://leetcode.com/username/",
@@ -97,10 +97,10 @@ const teams =
                 "lastName": "Thanage",
                 "img": "/assets/Tech_Team_Om_Thanage.jpg",
                 "info": {
-                    "role": "Tech Team Memeber",
+                    "role": "Tech Team Member",
                     "codechef": "https://www.codechef.com/users/omitron",
                     "github": "https://github.com/Om-Thanage",
-                    "leetcode": "https://leetcode.com/username/",
+                    "leetcode": "https://leetcode.com/u/omithon",
                     "codeforces": "https://codeforces.com/profile/om.thanage"
                 }
             },
@@ -109,7 +109,7 @@ const teams =
                 "lastName": "Dosi",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Tech Team Memeber",
+                    "role": "Tech Team Member",
                     "codechef": "https://www.codechef.com/users/ashutoshdosi",
                     "github": "https://github.com/ashutoshDosi",
                     "leetcode": "https://leetcode.com/ashutoshDosi/",
@@ -121,7 +121,7 @@ const teams =
                 "lastName": "Joshi",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Tech Team Memeber",
+                    "role": "Tech Team Member",
                     "codechef": "https://www.codechef.com/users/pluto55",
                     "github": "https://github.com/yash-shj",
                     "leetcode": "https://leetcode.com/pluto-lc/",
@@ -186,7 +186,7 @@ const teams =
                 "lastName": "Sharma",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Creative Team Memeber",
+                    "role": "Creative Team Member",
                     "codechef": "https://www.codechef.com/users/aaryan_96",
                     "github": "https://github.com/Aaryan-Sharma-5",
                     "leetcode": "https://leetcode.com/AaryanS25/",
@@ -198,7 +198,7 @@ const teams =
                 "lastName": "Parikh",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Creative Team Memeber",
+                    "role": "Creative Team Member",
                     "codechef": "https://www.codechef.com/users/aashnaparikh",
                     "github": "https://github.com/aashnaparikh1e",
                     "leetcode": "https://leetcode.com/username/",
@@ -210,7 +210,7 @@ const teams =
                 "lastName": "Hassani",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Creative Team Memeber",
+                    "role": "Creative Team Member",
                     "codechef": "https://www.codechef.com/users/viditah",
                     "github": "https://github.com/vidita14",
                     "leetcode": "https://leetcode.com/username/",
@@ -263,7 +263,7 @@ const teams =
                 "lastName": "Khutal",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Marketing Team Memeber",
+                    "role": "Marketing Team Member",
                     "codechef": "https://www.codechef.com/users/surabhie09",
                     "github": "https://github.com/surabhie09",
                     "leetcode": "https://leetcode.com/username/",
@@ -275,7 +275,7 @@ const teams =
                 "lastName": "Tendulkar",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "Marketing Team Memeber",
+                    "role": "Marketing Team Member",
                     "codechef": "https://www.codechef.com/users/hardy_elephant",
                     "github": "https://github.com/partht0902",
                     "leetcode": "https://leetcode.com/username/",
@@ -328,7 +328,7 @@ const teams =
                 "lastName": "Maheshwari",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "PR Team Memeber",
+                    "role": "PR Team Member",
                     "codechef": "https://www.codechef.com/users/AkshMaheshwari",
                     "github": "https://github.com/AkshMaheshwari",
                     "leetcode": "https://leetcode.com/aksh_m/",
@@ -340,7 +340,7 @@ const teams =
                 "lastName": "Banerjee",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "PR Team Memeber",
+                    "role": "PR Team Member",
                     "codechef": "https://www.codechef.com/users/suryanshub",
                     "github": "https://github.com/SuryanshuBanerjee",
                     "leetcode": "https://leetcode.com/SuryanshuBanerjee/",
@@ -393,7 +393,7 @@ const teams =
                 "lastName": "Walunj",
                 "img": "https://via.placeholder.com/150",
                 "info": {
-                    "role": "PR Team Memeber",
+                    "role": "PR Team Member",
                     "codechef": "https://www.codechef.com/users/surabhie09",
                     "github": "https://github.com/surabhie09",
                     "leetcode": "https://leetcode.com/username/",
