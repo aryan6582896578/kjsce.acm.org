@@ -155,7 +155,7 @@ const teams =
             {
                 "firstName": "Nikunj",
                 "lastName": "Rathi",
-                "img": "https://via.placeholder.com/150",
+                "img": "/assets/Tech_Team_Nikunj_Rathi.jpg",
                 "info": {
                     "role": "FY Rep-Tech Team",
                     "codechef": "https://www.codechef.com/users/nikunj_1906",
