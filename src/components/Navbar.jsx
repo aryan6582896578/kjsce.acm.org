@@ -23,14 +23,15 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="z-[999] flex justify-center items-center fixed top-0 left-0 right-0">
-            <div 
-                className={`
+        <>
+            <nav className="z-[999] flex justify-center items-center fixed top-0 left-0 right-0">
+                <div
+                    className={`
                     z-20 
                     h-[65px] 
-                    ${isScrolled 
-                        ? 'w-[70vw]' // Narrow width when scrolled
-                        : 'w-[90vw] '} // Full width at top
+                    ${isScrolled
+                            ? 'w-[70vw]' // Narrow width when scrolled
+                            : 'w-[90vw] '} // Full width at top
                     backdrop-filter 
                     backdrop-blur-md 
                     bg-[rgba(255, 255, 255, 0.2)] 
@@ -48,62 +49,65 @@ const Navbar = () => {
                     duration-300 
                     ease-in-out
                 `}
-            >
-                {/* Logo */}
-                <div className={`
+                >
+                    {/* Logo */}
+                    <div className={`
                     image 
                     transition-all 
                     duration-300 
                     ease-in-out 
                 `}>
-                    <img
-                        className="h-14 m-5 cursor-pointer origin-left"
-                        src="logo_withoutbg.png"
-                        alt="logo"
-                    />
+                        <img
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                            className="h-14 m-5 cursor-pointer origin-left"
+                            src="logo_withoutbg.png"
+                            alt="logo"
+                        />
+                    </div>
+
+                    {/* Menu for larger screens */}
+                    <div className="hidden md:flex">
+                        <ul className="flex gap-3 m-5 text-sm font-semibold whitespace-nowrap text-neutral-400">
+                            <li className="cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</li>
+                            <li className="cursor-pointer" onClick={() => handleScrollTo("about-us")}>About us</li>
+                            <li className="cursor-pointer" onClick={() => handleScrollTo("events")}>Events</li>
+                            <li className="cursor-pointer" onClick={() => handleScrollTo("our-team")}>Our Team</li>
+                            <li className="cursor-pointer" onClick={() => handleScrollTo("contact-us")}>Contact Us</li>
+                        </ul>
+                    </div>
+
+                    {/* Hamburger menu for mobile */}
+                    <div className="md:hidden m-5">
+                        <button
+                            className="text-neutral-400 text-xl"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        >
+                            ☰
+                        </button>
+                    </div>
                 </div>
-                
-                {/* Menu for larger screens */}
-                <div className="hidden md:flex">
-                    <ul className="flex gap-3 m-5 text-sm font-semibold whitespace-nowrap text-neutral-400">
-                        <li className="cursor-pointer" onClick={() => handleScrollTo("home")}>Home</li>
-                        <li className="cursor-pointer" onClick={() => handleScrollTo("our-team")}>Our Team</li>
+
+                {/* Fullscreen Drawer */}
+                <div
+                    className={`fixed inset-0 bg-[rgba(255, 255, 255, 0.9)] backdrop-blur-md z-[1000] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                        }`}
+                >
+                    <button
+                        className="absolute top-5 right-5 text-xl text-neutral-400"
+                        onClick={() => setIsMenuOpen(false)}
+                    >
+                        ✕
+                    </button>
+                    <ul className="flex flex-col justify-center items-center h-full gap-5 text-lg font-semibold text-neutral-400">
+                        <li className="cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</li>
+                        <li className="cursor-pointer" onClick={() => handleScrollTo("about-us")}>About us</li>
                         <li className="cursor-pointer" onClick={() => handleScrollTo("events")}>Events</li>
+                        <li className="cursor-pointer" onClick={() => handleScrollTo("our-team")}>Our Team</li>
                         <li className="cursor-pointer" onClick={() => handleScrollTo("contact-us")}>Contact Us</li>
                     </ul>
                 </div>
-                
-                {/* Hamburger menu for mobile */}
-                <div className="md:hidden m-5">
-                    <button
-                        className="text-neutral-400 text-xl"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                        ☰
-                    </button>
-                </div>
-            </div>
-
-            {/* Fullscreen Drawer */}
-            <div
-                className={`fixed inset-0 bg-[rgba(255, 255, 255, 0.9)] backdrop-blur-md z-[1000] transform transition-transform duration-300 ease-in-out ${
-                    isMenuOpen ? "translate-x-0" : "-translate-x-full"
-                }`}
-            >
-                <button
-                    className="absolute top-5 right-5 text-xl text-neutral-400"
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    ✕
-                </button>
-                <ul className="flex flex-col justify-center items-center h-full gap-5 text-lg font-semibold text-neutral-400">
-                    <li className="cursor-pointer" onClick={() => handleScrollTo("home")}>Home</li>
-                    <li className="cursor-pointer" onClick={() => handleScrollTo("our-team")}>Our Team</li>
-                    <li className="cursor-pointer" onClick={() => handleScrollTo("events")}>Events</li>
-                    <li className="cursor-pointer" onClick={() => handleScrollTo("contact-us")}>Contact Us</li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+        </>
     );
 };
 
