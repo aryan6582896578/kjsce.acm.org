@@ -1,6 +1,11 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import LinkedinIcon from "../assets/linkedin.svg";
+import CodechefIcon from "../assets/cc.svg";
+import CodeforcesIcon from "../assets/cfc.svg";
+import LeetcodeIcon from "../assets/leetcode.svg";
+import GithubIcon from "../assets/github.svg";
 
 const TeamCard = ({cardRef,team, imagesRef,index}) => {
     const [selectedMember, setSelectedMember] = useState(null);
@@ -29,25 +34,27 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
   
     return (
       <div className="md:px-16">
-        <div className="box w-full h-96 bg-gray-800 flex items-center relative mt-5 rounded-2xl">
+        <div className="box w-full h-96 bg-blue-500 flex items-center relative mt-5 rounded-2xl">
           <div
-            className="bg-white h-full md:w-full flex justify-center items-center text-2xl p-4 text-center rounded-l-2xl "
+            className="bg-blue-900 text-white h-full md:w-full flex justify-center items-center text-2xl p-4 text-center rounded-l-2xl "
             ref={(el) => (cardRef.current[index] = el)}
           >
             {selectedMember !== null ? (
               <div>
-                <h2 className="font-bold text-xl">{selectedMember.name}</h2>
-                <p className="text-gray-700">{selectedMember.info}</p>
-                <p className="text-gray-700"><a href={`${selectedMember.github}`}>Github</a></p>
-                <p className="text-gray-700"><a href={`${selectedMember.leetcode}`}>Leetcode</a></p>
-                <p className="text-gray-700"><a href={`${selectedMember.codechef}`}>Codechef</a></p>
-                <p className="text-gray-700"><a href={`${selectedMember.codeforces}`}>Codeforces</a></p>
-                <p className="text-gray-700"><a href={`${selectedMember.linkedin}`}>Linkedin</a></p>
+                <h2 className="font-bold text-2xl">{`${selectedMember.firstName} ${selectedMember.lastName}`}</h2>
+                <p className="text-white">{selectedMember.info.role}</p>
+                <div className="flex mt-4 gap-4">
+                  <p className="text-gray-700"><a href={`${selectedMember.info.github}`}><img src={GithubIcon} alt="GitHubIcon" /></a></p>
+                  <p className="text-gray-700"><a href={`${selectedMember.info.linkedin}`}><img src={LinkedinIcon}  alt="Linkedin Icon"/></a></p>
+                  <p className="text-gray-700"><a href={`${selectedMember.info.codechef}`}><img src={CodechefIcon} className="h-12 w-auto" alt="Codechef Icon" /></a></p>
+                  <p className="text-gray-700"><a href={`${selectedMember.info.leetcode}`}><img src={LeetcodeIcon} className="h-12 w-auto" alt="LeetCodeIcon" /></a></p>
+                  <p className="text-gray-700"><a href={`${selectedMember.info.codeforces}`}><img src={CodeforcesIcon} className="h-12 w-auto" alt="Codecforces Icon" /></a></p>
+                </div>
               </div>
             ) : (
-              <>
+              <div className="text-5xl font-bold">
                 {team.teamName}
-              </>
+              </div>
             )}
           </div>
   
@@ -64,11 +71,11 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
                 >
                   <img
                     src={member.img}
-                    alt={member.name}
+                    alt={member.firstName}
                     className="rounded-full w-16 h-16 md:w-24 md:h-24"
                   />
                   <p className="text-white text-sm md:text-base mt-2">
-                    {member.name}
+                    {member.firstName}
                   </p>
                 </div>
               ))}
