@@ -9,7 +9,7 @@ function Event() {
             events.map((event, index) => (
             <div key={index} className='flex flex-col md:flex-row rounded-2xl w-full mb-8 '>
                 <img
-                    src='https://picsum.photos/400/300'
+                    src={event.image}
                     alt='Event'
                     className={`lg:w-1/2 md:w-1/3 w-full h-auto rounded-2xl ${index % 2 !== 0 ? 'md:order-2' : ''}`}
                 />

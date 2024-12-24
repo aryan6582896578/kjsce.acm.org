@@ -1,12 +1,14 @@
 [
   {
-    "title": "Artemis",
-    "date": "2023-11-15",
-    "description": "Join us for insights into the latest tech trends. Engage with industry leaders and innovators as they discuss groundbreaking technologies, emerging tools, and strategies to succeed in the ever-evolving tech landscape. Network with professionals, attend insightful sessions, and explore opportunities that will shape the future of technology."
+    "title": "Beyond the Classroom",
+    "date": "4-9-2024",
+    "description": "Beyond the Classroom, conducted by the students of KJSCE ACM, brought together 150+ first-year students for an engaging session on Hackathons, Git, GitHub, and Competitive Programming. The event aimed to simplify key tech concepts and inspire students to explore the world of coding and innovation.",
+    "image":"/BTC.JPG"
   },
   {
-    "title": "Beyond the Classroom",
-    "date": "2023-12-05",
-    "description": "Collaborate and innovate at our annual hackathon. Join fellow developers, designers, and tech enthusiasts in an intense 48-hour coding marathon. Bring your ideas to life, tackle real-world challenges, and push the boundaries of technology. Compete for prizes, recognition, and the opportunity to make a lasting impact."
+    "title": "Artemis",
+    "date": "15-10-2024",
+    "description": "Artemis, brought to you by KJSCE ACM Student Chapter, is a fun and dynamic frontend mini-hackathon. It’s all about unleashing your creativity in web development—crafting cool designs, building functional frontends, and tackling unique challenges. Whether you’re a pro or just starting out, it’s a great chance to learn, create, and win!",
+    "image":"/Artemis.jpg"
   }
 ]
