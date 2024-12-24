@@ -47,7 +47,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             source ~/.nvm/nvm.sh
-            cd kjsce.acm.org
+            cd public_html
             rm -rf ./*
             mkdir tmp
             cd tmp
