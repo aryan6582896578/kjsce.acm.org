@@ -95,7 +95,7 @@ const teams =
             {
                 "firstName": "Om",
                 "lastName": "Thanage",
-                "img": "https://via.placeholder.com/150",
+                "img": "src/assets/Tech_Team_Om_Thanage.jpg",
                 "info": {
                     "role": "Tech Team Memeber",
                     "codechef": "https://www.codechef.com/users/omitron",
