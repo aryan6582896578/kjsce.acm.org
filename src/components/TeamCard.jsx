@@ -47,11 +47,11 @@ const TeamCard = ({cardRef,team, imagesRef,index}) => {
               <div>
                 <h2 className="font-bold text-3xl">{`${selectedMember.firstName} ${selectedMember.lastName}`}</h2>
                 <p className="text-white">{selectedMember.info.role}</p>
-                <div className="flex flex-col justify-start items-start mt-4 gap-4 text-white">
-                  <p><a href={`${selectedMember.info.github}`} className="flex justify-center items-center gap-4"><img src={GithubIcon} alt="GitHubIcon" /> @{parseUsername(selectedMember.info.github)}</a></p>
-                  <p><a href={`${selectedMember.info.codechef}`} className="flex justify-center items-center gap-4"><img src={CodechefIcon} alt="CodechefIcon" className="h-12" />@{parseUsername(selectedMember.info.codechef)}</a></p>
-                  <p><a href={`${selectedMember.info.codeforces}`} className="flex justify-center items-center gap-4"><img src={CodeforcesIcon} alt="CodeForcesIcon" className="h-12" />@{parseUsername(selectedMember.info.codeforces)}</a></p>
-                  <p><a href={`${selectedMember.info.leetcode}`} className="flex justify-center items-center gap-4"><img src={LeetcodeIcon} alt="LeetcodeIcon" />@{parseUsername(selectedMember.info.leetcode)}</a></p>
+                <div className="flex flex-col justify-start items-start mt-4 gap-4 text-white text-sm">
+                  <p><a href={`${selectedMember.info.github}`} className="flex justify-center items-center sm:gap-4 gap-2"><img src={GithubIcon} alt="GitHubIcon" className="sm:h-12 h-4" /> @{parseUsername(selectedMember.info.github)}</a></p>
+                  <p><a href={`${selectedMember.info.codechef}`} className="flex justify-center items-center sm:gap-4 gap-2"><img src={CodechefIcon} alt="CodechefIcon" className="sm:h-12 h-4" />@{parseUsername(selectedMember.info.codechef)}</a></p>
+                  <p><a href={`${selectedMember.info.codeforces}`} className="flex justify-center items-center sm:gap-4 gap-2"><img src={CodeforcesIcon} alt="CodeForcesIcon" className="sm:h-12 h-4" />@{parseUsername(selectedMember.info.codeforces)}</a></p>
+                  <p><a href={`${selectedMember.info.leetcode}`} className="flex justify-center items-center sm:gap-4 gap-2"><img src={LeetcodeIcon} alt="LeetcodeIcon" className="sm:h-12 h-4" />@{parseUsername(selectedMember.info.leetcode)}</a></p>
                 </div>
               </div>
             ) : (
