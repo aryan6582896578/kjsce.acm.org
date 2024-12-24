@@ -29,12 +29,13 @@ function Team2() {
 
       gsap.to(imagesRef.current[index], {
         opacity: 1,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
-          trigger: imagesRef.current[index],
+          trigger: cardRef.current[index],
           start: "top+=10rem center",
+          end: "top+=100rem center",
           scrub: 0.02,
-          markers: false,
+          markers: true,
         },
       });
     });

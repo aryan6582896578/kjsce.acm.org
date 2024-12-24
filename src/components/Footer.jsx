@@ -6,11 +6,6 @@ const Footer = () => {
     <footer
       id="contact-us"
       className="bg-gradient-to-b from-[#000a40] to-black opacity-85 text-white py-12 px-6 sm:px-8 lg:px-16 rounded-t-3xl shadow-2xl"
-      style={{
-        width: '90vw',
-        margin: '0 auto',
-        maxWidth: '1400px', // Added max-width for better responsiveness
-      }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Logo Section */}
