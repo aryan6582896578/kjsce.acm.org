@@ -38,12 +38,6 @@ jobs:
       - name: Verify Installed Node.js Version
         run: node -v
 
-      - name: 🏗 Build Project
-        run: npm run build --verbose
-
-      - name: Verify Build Output
-        run: ls -la dist/
-
       - name: 📂 Deploy to Server
         uses: appleboy/ssh-action@v0.1.8
         with:
