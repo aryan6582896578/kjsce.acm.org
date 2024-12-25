@@ -20,7 +20,7 @@ const Footer = () => {
         {/* Navigation Links */}
         <div className="grid md:grid-cols-2 gap-8 mb-12 text-center md:text-left">
           <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-            <h3 className="font-bold text-xl mb-5 text-[#e6f2ff] tracking-wide">Contact Information</h3>
+            <h1 className="font-bold text-xl mb-5 text-[#e6f2ff] tracking-wide">Contact Information</h1>
             <ul className="space-y-4">
               <li className="flex items-center justify-center md:justify-start gap-3">
                 <Mail className="text-[#4fc3f7] w-5 h-5" />
@@ -45,6 +45,7 @@ const Footer = () => {
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label='Redirecting to Instagram Page of ACM-KJSCE'
                 className="hover:scale-110 transition-transform duration-300"
               >
                 <Instagram className="text-[#e1306c] w-8 h-8" />
@@ -53,6 +54,7 @@ const Footer = () => {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label='Redirecting to LinkedIn Page of ACM-KJSCE'
                 className="hover:scale-110 transition-transform duration-300"
               >
                 <Linkedin className="text-[#0077b5] w-8 h-8" />
