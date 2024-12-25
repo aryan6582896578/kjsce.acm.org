@@ -1,6 +1,6 @@
 function AboutUs() {
   return (
-    <div id="about-us" className='flex flex-col justify-center items-center p-8 md:mt-8 mt-[5rem]'>
+    <div id="about-us" className='flex flex-col justify-center items-center p-8 md:mt-40 lg:mt-8 mt-[5rem]'>
       <h1 className='text-4xl uppercase font-black dark:text-white text-black px-8 pb-4 mb-4 md:mb-8 border-b-cyan-400 border-b-2'>About Us</h1>
       <div className='flex flex-col md:flex-row justify-center md:items-center mb-16 w-full h-1/2'>
         <div className='flex flex-col justify-center items-center md:w-1/2 w-full'>
