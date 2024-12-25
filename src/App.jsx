@@ -5,9 +5,13 @@ import AboutUs from './components/AboutUs'
 import Event from './components/Event'
 import Footer from './components/Footer'
 import Team2 from './components/Team2'
+import Clarity from '@microsoft/clarity';
 import "./App.css"
 
 function App() {
+
+  const projectId = "pjgnnov8ie"
+  Clarity.init(projectId)
   return (
     <>
       <div className="w-full h-full overflow-hidden">
@@ -16,7 +20,6 @@ function App() {
           <Hero />
           <AboutUs />
           <Event />
-          {/* <Team /> */}
           <Team2 />
           <Footer />
         </div>
