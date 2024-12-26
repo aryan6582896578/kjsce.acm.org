@@ -1,14 +1,15 @@
 [
   {
-    "title": "Beyond the Classroom",
-    "date": "4-9-2024",
-    "description": "Beyond the Classroom, conducted by the students of KJSCE ACM, brought together 150+ first-year students for an engaging session on Hackathons, Git, GitHub, and Competitive Programming. The event aimed to simplify key tech concepts and inspire students to explore the world of coding and innovation.",
-    "image":"src/assets/BTC.jpg"
-  },
-  {
     "title": "Artemis",
     "date": "15-10-2024",
     "description": "Artemis, brought to you by KJSCE ACM Student Chapter, is a fun and dynamic frontend mini-hackathon. It’s all about unleashing your creativity in web development—crafting cool designs, building functional frontends, and tackling unique challenges. Whether you’re a pro or just starting out, it’s a great chance to learn, create, and win!",
-    "image":"src/assets/Artemis.jpg"
+    "image":"/assets/Artemis.jpg"
+  },
+  {
+    "title": "Beyond the Classroom",
+    "date": "4-9-2024",
+    "description": "Beyond the Classroom, conducted by the students of KJSCE ACM, brought together 150+ first-year students for an engaging session on Hackathons, Git, GitHub, and Competitive Programming. The event aimed to simplify key tech concepts and inspire students to explore the world of coding and innovation.",
+    "image":"/assets/BTC.jpg"
   }
+  
 ]

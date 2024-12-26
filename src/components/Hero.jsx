@@ -10,7 +10,7 @@ function Hero() {
   return (
     <WavyBackground className="max-w-7xl mx-auto px-4 py-16 sm:mt-64 md:mt-96 mt-72 lg:mt-0">
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 gap-0 items-center">
         {/* Left Side: Text Content */}
         <div className="flex absolute top-0 left-0 w-full">
         {/* <div className="glow"></div> */}
@@ -33,7 +33,7 @@ function Hero() {
         </div>
 
         {/* Right Side: Globe */}
-        <div className="relative lg:h-[40rem] md:h-[30rem] h-[20rem] w-full">
+        <div className="relative lg:h-[35rem] md:h-[30rem] h-[20rem] w-full">
           <Suspense fallback={<div className="text-white">Loading...</div>}>
             <World data={sampleArcs} globeConfig={globeConfig} />
           </Suspense>

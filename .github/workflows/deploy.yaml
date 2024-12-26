@@ -1,48 +1,38 @@
-name: 🚀 Shipping Build
+name: Deploy React App to cPanel
+
 on:
   push:
     branches:
-      - main
+      - main 
+
 jobs:
-  FTP-Deploy-Action:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-      - name: Use Node.js 18
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - name: Cache npm dependencies
-        uses: actions/cache@v3
-        id: cache-node-modules
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-v1
-      - name: 🔨 Install Dependencies
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: |
-          npm install
-        env:
-          NODE_OPTIONS: "--max_old_space_size=4096"
-          CI: false
-      - name: Verify Installed Node.js Version
-        run: node -v
-      - name: 🏗 Build Project
-        run: npm run build --verbose
-      - name: Verify Build Output
-        run: ls -la dist/
-      - name: 📂 Sync folders and files to the server
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
-        with:
-          protocol: ftp
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/
+    - name: Checkout code
+      uses: actions/checkout@v3
 
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18' 
 
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build React app
+      run: npm run build
+
+    - name: Deploy files to cPanel via SSH
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_HOST: ${{ secrets.SSH_HOST }}
+        SSH_USER: ${{ secrets.SSH_USER }}
+        SSH_PORT: ${{ secrets.SSH_PORT }}
+      run: |
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -p $SSH_PORT $SSH_HOST >> ~/.ssh/known_hosts
+        scp -P $SSH_PORT -r ./dist/* $SSH_USER@$SSH_HOST:~/public_html
