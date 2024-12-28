@@ -128,6 +128,9 @@ const TeamCard = ({ cardRef, team, imagesRef, index }) => {
 						))}
 					</div>
 				</div>
+				<div className="absolute right-0 bottom-0 p-4">
+							<p className="text-xs">Click on picture for more info</p>
+						</div>
 			</div>
 		</div>
 	);

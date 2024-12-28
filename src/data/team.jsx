@@ -396,7 +396,7 @@ const teams =
                     "role": "Operations Team Member",
                     "codechef": "https://www.codechef.com/users/vedantwalunj",
                     "github": "https://github.com/vedant1317",
-                    "leetcode": "https://leetcode.com/u/username",
+                    "leetcode": "https://leetcode.com/u/",
                     "codeforces": "https://codeforces.com/profile/vedantwalunj1317"
                 }
             },
