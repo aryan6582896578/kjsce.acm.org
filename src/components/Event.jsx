@@ -16,7 +16,7 @@ function Event() {
                 <div className="h-64 md:w-20 w-10  bg-blue-600 blur-[90px] absolute top-[145rem] mt-96 left-0"></div>
                 <div className="h-64 md:w-20 w-10 bg-blue-600 blur-[90px] absolute md:top-[115rem] top-[100rem] mt-96 right-0"></div>
                 <div className='flex flex-col justify-center items-start lg:w-2/3 sm:p-5 py-0'>
-                    <div className='md:text-6xl sm:text-3xl text-2xl text-left dark:text-white text-black font-bold sm:p-4 pt-4 pb-1'>
+                    <div className='md:text-6xl sm:text-3xl text-2xl text-left dark:text-white text-white font-bold sm:p-4 pt-4 pb-1'>
                         {event.title}
                     </div>
                     <p className='text-1xl md:text-2xl text-white text-justify sm:pl-4'>Date: {event.date}</p>

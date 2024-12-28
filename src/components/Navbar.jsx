@@ -69,7 +69,7 @@ const Navbar = () => {
                     {/* Menu for larger screens */}
                     <div className="hidden md:flex">
                         <ul className="flex gap-3 m-5 text-sm font-semibold whitespace-nowrap text-neutral-400">
-                            <li className="cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</li>
+                            <li className="cursor-pointer hover:text-blue-500 hover:scale-110 transition-transform duration-300"  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</li>
                             <li className="cursor-pointer" onClick={() => handleScrollTo("about-us")}>About us</li>
                             <li className="cursor-pointer" onClick={() => handleScrollTo("events")}>Events</li>
                             <li className="cursor-pointer" onClick={() => handleScrollTo("our-team")}>Our Team</li>

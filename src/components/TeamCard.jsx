@@ -119,7 +119,7 @@ const TeamCard = ({ cardRef, team, imagesRef, index }) => {
 								<img
 									src={member.img}
 									alt={member.firstName}
-									className="rounded-full w-16 h-16 md:w-24 md:h-24"
+									className="rounded-full w-16 h-16 md:w-24 md:h-24 hover:scale-[1.2] transition-transform duration-300"
 								/>
 								<p className="text-black text-sm md:text-base mt-2">
 									{member.firstName}
@@ -128,9 +128,7 @@ const TeamCard = ({ cardRef, team, imagesRef, index }) => {
 						))}
 					</div>
 				</div>
-				<div className="absolute right-0 bottom-0 p-4">
-							<p className="text-xs">Click on picture for more info</p>
-						</div>
+			
 			</div>
 		</div>
 	);

@@ -1,13 +1,13 @@
 function AboutUs() {
   return (
     <div id="about-us" className='flex flex-col justify-center items-center p-8 md:mt-40 lg:mt-8 mt-[5rem]'>
-      <h1 className='text-4xl uppercase font-black dark:text-white text-black px-8 pb-4 mb-4 md:mb-8 border-b-cyan-400 border-b-2'>About Us</h1>
+      <h1 className='text-4xl uppercase font-black dark:text-white text-white px-8 pb-4 mb-4 md:mb-8 border-b-cyan-400 border-b-2'>About Us</h1>
       <div className='flex flex-col md:flex-row justify-center md:items-center mb-16 w-full h-1/2'>
         <div className='flex flex-col justify-center items-center md:w-1/2 w-full'>
-          <div className='md:text-6xl sm:text-3xl text-2xl text-center dark:text-white text-black mb-4 md:mb-0 md:mr-8 font-bold md:pb-4'>
+          <div className='md:text-6xl sm:text-3xl text-2xl text-center dark:text-white text-white mb-4 md:mb-0 md:mr-8 font-bold md:pb-4'>
             Together <span className="text-cyan-400">We</span> Strive,
           </div>
-          <div className='md:text-6xl sm:text-3xl text-2xl text-center dark:text-white text-black mb-4 md:mb-0 md:mr-8 font-bold md:pb-4'>
+          <div className='md:text-6xl sm:text-3xl text-2xl text-center dark:text-white text-white mb-4 md:mb-0 md:mr-8 font-bold md:pb-4'>
             Together <span className="text-cyan-400">We</span> Achieve!
           </div>
         </div>
