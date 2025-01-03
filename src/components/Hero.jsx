@@ -38,8 +38,8 @@ function Hero() {
         <div className="relative lg:h-[35rem] md:h-[30rem] h-[20rem] w-full">
           <Suspense fallback={<div className="text-white">Loading...</div>}>
             {/* <World data={sampleArcs} globeConfig={globeConfig} /> */}
-            <model-viewer src="/model/Earth.glb"
-                  ios-src="/model/Earth.usdz"
+            <model-viewer src="https://cdn.glitch.global/7eb9227c-30fb-4845-b75b-c3acd4d4e0be/Earth.glb?v=1735932843428"
+                  ios-src="https://cdn.glitch.global/7eb9227c-30fb-4845-b75b-c3acd4d4e0be/Earth.usdz?v=1735938002984"
                   poster="/assets/01EarthModel.png"
                   alt="A 3D model of an Earth"
                   style = {{width: "100%", height: "100%"}}
