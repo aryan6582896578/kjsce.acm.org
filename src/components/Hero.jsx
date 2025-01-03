@@ -1,12 +1,14 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef } from "react";
 import { WavyBackground } from "./ui/wavy-background";
-import sampleArcs from "../data/SampleArcs";
-import globeConfig from "../data/GlobeConfig";
+// import sampleArcs from "../data/SampleArcs";
+// import globeConfig from "../data/GlobeConfig";
 import "./styles/Hero.css"
 
-const World = React.lazy(() => import("./ui/globe"));
+// const World = React.lazy(() => import("./ui/globe"));
 
 function Hero() {
+
+  const modelRef = useRef();
   return (
     <WavyBackground className="max-w-7xl mx-auto px-4 py-16 sm:mt-64 md:mt-96 mt-72 lg:mt-0">
 
@@ -35,9 +37,24 @@ function Hero() {
         {/* Right Side: Globe */}
         <div className="relative lg:h-[35rem] md:h-[30rem] h-[20rem] w-full">
           <Suspense fallback={<div className="text-white">Loading...</div>}>
-            <World data={sampleArcs} globeConfig={globeConfig} />
+            {/* <World data={sampleArcs} globeConfig={globeConfig} /> */}
+            <model-viewer src="/model/Earth.glb"
+                  ios-src="/model/Earth.usdz"
+                  poster="/assets/01EarthModel.png"
+                  alt="A 3D model of an Earth"
+                  style = {{width: "100%", height: "100%"}}
+                  camera-controls
+                  auto-rotate ar
+                  disable-zoom
+                  disable-pan
+                  exposure="0.8"
+                  shadow-intensity="1"
+                  ref={(ref) => {
+                    modelRef.current = ref;
+                  }}>
+            </model-viewer>
           </Suspense>
-          <div className="absolute top-0 md:hidden h-[20rem] w-full bg-transparent"/>
+          <div className="absolute top-0 md:hidden h-[16rem] w-full bg-transparent"/>
 
         </div>
       </div>

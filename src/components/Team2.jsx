@@ -62,6 +62,7 @@ function Team2() {
         </div>
         {teams.map((team, index) => (
           <TeamCard
+            key={index}
             cardRef={cardRef}
             team={team}
             imagesRef={imagesRef}
