@@ -56,7 +56,7 @@ function Hero() {
                   }}/>
             
           {/* </Suspense> */}
-          <div className="absolute top-0 md:hidden h-[16rem] w-full bg-transparent"/>
+          
 
         </div>
       </div>

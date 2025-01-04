@@ -20,8 +20,8 @@ function Team2() {
         duration: 2,
         scrollTrigger: {
           trigger: cardRef.current[index],
-          start: "top-=10rem bottom",
-          end: "top-=2rem center", 
+          start: "top-=25% center",
+          end: "top center", 
           scrub: 0.02,
           markers: false,
         },
