@@ -35,25 +35,27 @@ function Hero() {
         </div>
 
         {/* Right Side: Globe */}
-        <div className="relative lg:h-[35rem] md:h-[30rem] h-[20rem] w-full">
-          <Suspense fallback={<div className="text-white">Loading...</div>}>
+        <div className="relative lg:h-[35rem] md:h-[30rem] h-[20rem] w-full flex justify-center items-center">
+          {/* <Suspense fallback={<div className="text-white">Loading...</div>}> */}
             {/* <World data={sampleArcs} globeConfig={globeConfig} /> */}
             <model-viewer src="https://cdn.glitch.global/7eb9227c-30fb-4845-b75b-c3acd4d4e0be/Earth.glb?v=1735932843428"
                   ios-src="https://cdn.glitch.global/7eb9227c-30fb-4845-b75b-c3acd4d4e0be/Earth.usdz?v=1735938002984"
                   poster="/assets/01EarthModel.png"
                   alt="A 3D model of an Earth"
-                  style = {{width: "100%", height: "100%"}}
+                  style = {{width: "80%", height: "80%"}}
                   camera-controls
                   auto-rotate ar
                   disable-zoom
                   disable-pan
+                  loading="eager"
+                  ar-modes="scene-viewer webxr quick-look"
                   exposure="0.8"
                   shadow-intensity="1"
                   ref={(ref) => {
                     modelRef.current = ref;
-                  }}>
-            </model-viewer>
-          </Suspense>
+                  }}/>
+            
+          {/* </Suspense> */}
           <div className="absolute top-0 md:hidden h-[16rem] w-full bg-transparent"/>
 
         </div>
