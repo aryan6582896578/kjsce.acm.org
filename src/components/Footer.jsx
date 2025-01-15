@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="font-bold text-xl mb-5 text-[#e6f2ff] tracking-wide">Connect With Us</h3>
             <div className="flex justify-center space-x-6">
               <a 
-                href="https://instagram.com" 
+                href="https://instagram.com/kjsce_acm" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label='Redirecting to Instagram Page of ACM-KJSCE'
@@ -51,7 +51,7 @@ const Footer = () => {
                 <Instagram className="text-[#e1306c] w-8 h-8" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://in.linkedin.com/company/kjsce-acm-student-chapter" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label='Redirecting to LinkedIn Page of ACM-KJSCE'
