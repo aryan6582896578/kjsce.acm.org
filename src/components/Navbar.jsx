@@ -72,6 +72,7 @@ const Navbar = () => {
                             <li className="cursor-pointer hover:text-blue-500 hover:scale-110 transition-transform duration-300"  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</li>
                             <li className="cursor-pointer" onClick={() => handleScrollTo("about-us")}>About us</li>
                             <li className="cursor-pointer" onClick={() => handleScrollTo("events")}>Events</li>
+                            <li className="cursor-pointer" onClick={() => handleScrollTo("sponsors")}>Sponsors</li>
                             <li className="cursor-pointer" onClick={() => handleScrollTo("our-team")}>Our Team</li>
                             <li className="cursor-pointer" onClick={() => handleScrollTo("contact-us")}>Contact Us</li>
                         </ul>
@@ -103,6 +104,7 @@ const Navbar = () => {
                         <li className="cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</li>
                         <li className="cursor-pointer" onClick={() => handleScrollTo("about-us")}>About us</li>
                         <li className="cursor-pointer" onClick={() => handleScrollTo("events")}>Events</li>
+                        <li className="cursor-pointer" onClick={() => handleScrollTo("sponsors")}>Sponsors</li>
                         <li className="cursor-pointer" onClick={() => handleScrollTo("our-team")}>Our Team</li>
                         <li className="cursor-pointer" onClick={() => handleScrollTo("contact-us")}>Contact Us</li>
                     </ul>

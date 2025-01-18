@@ -20,10 +20,7 @@ function AboutUs() {
           At KJSCE ACM, our mantra is simple: together we strive, together we achieve..... and maybe have a little too much fun along the way!
         </p>
       </div>
-      <div className='relative flex justify-center'>
-        <div className='absolute inset-0 transform -translate-x-1/12 md:translate-x-1/3 -translate-y-4 bg-gradient-to-b from-indigo-950 via-cyan-900  to-cyan-400 md:w-2/3 w-11/12 rounded-2xl'></div>
-        <img src='team.jpg' alt='About Us' className='relative z-10 md:w-2/3 w-11/12 rounded-2xl md:mt-12 mt-0' />
-      </div>
+        <img src='team.jpg' alt='About Us' className='relative z-10 md:w-2/3 w-11/12 rounded-2xl md:mt-12 mt-0 about' />
     </div>
   )
 }

@@ -47,8 +47,8 @@ function Team2() {
     <>
       <div id = "our-team" className="my-5 h-full flex flex-col">
         <div className="flex flex-col items-center w-full justify-center">
-          <h1 className="text-4xl uppercase font-black dark:text-white text-white md:px-8 mb-4 pb-4 md:mb-8 border-b-cyan-400 border-b-2 title">
-            Our Team
+          <h1 className="text-4xl uppercase font-black dark:text-white text-white px-8 pb-4 mb-4 md:mb-8 border-b-cyan-400 border-b-2">
+          Our Team
           </h1>
           <div className="flex sm:flex-row flex-col items-center w-auto gap-4 justify-around mt-8 bg-gradient-to-b from-[#197EB2] to-black shadow-lg rounded-lg p-4">
               <img src="/assets/Faculty_Sponsor.jpg" alt="Faculty Sponsor" className="sm:w-auto w-1/2 sm:h-1/4 h-auto rounded-lg shadow-lg" />

@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Team2 from './components/Team2'
 import Clarity from '@microsoft/clarity';
 import "./App.css"
+import Sponsors from './components/Sponsors'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Hero />
           <AboutUs />
           <Event />
+          <Sponsors />
           <Team2 />
           <Footer />
         </div>
