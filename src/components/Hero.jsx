@@ -38,8 +38,8 @@ function Hero() {
         <div className="relative lg:h-[35rem] md:h-[30rem] h-[20rem] w-full flex justify-center items-center">
           {/* <Suspense fallback={<div className="text-white">Loading...</div>}> */}
             {/* <World data={sampleArcs} globeConfig={globeConfig} /> */}
-            <model-viewer src="https://cdn.glitch.global/7eb9227c-30fb-4845-b75b-c3acd4d4e0be/Earth.glb?v=1735932843428"
-                  ios-src="https://cdn.glitch.global/7eb9227c-30fb-4845-b75b-c3acd4d4e0be/Earth.usdz?v=1735938002984"
+            <model-viewer src="/models/Earth.glb"
+                  ios-src="/models/Earth.usdz"
                   poster="/assets/01EarthModel.png"
                   alt="A 3D model of an Earth"
                   style = {{width: "80%", height: "80%"}}
@@ -50,7 +50,6 @@ function Hero() {
                   loading="eager"
                   ar-modes="scene-viewer webxr quick-look"
                   exposure="0.8"
-                  shadow-intensity="1"
                   ref={(ref) => {
                     modelRef.current = ref;
                   }}/>

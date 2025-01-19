@@ -20,7 +20,7 @@ function Sponsors() {
 
   useEffect(() => {
     const slider = sliderRef.current;
-    let scrollSpeed = 3;
+    let scrollSpeed = 1;
     let animationFrameId;
 
     const loop = () => {
@@ -54,7 +54,7 @@ function Sponsors() {
                 <img
                   src={imgSrc}
                   alt={`Slide ${index}`}
-                  className="w-auto h-[120px] sm:h-[200px] object-cover"
+                  className="w-auto h-[120px] object-cover"
                 />
               </div>
             ))}
