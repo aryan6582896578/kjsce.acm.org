@@ -1,45 +1,12 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useRef } from "react";
 import TeamCard from "./TeamCard";
 import teams from "../data/team";
 
-gsap.registerPlugin(ScrollTrigger);
 
 function Team2() {
   const cardRef = useRef([]);
   const imagesRef = useRef([]);
 
-  
-
-  useEffect(() => {
-    teams.forEach((team, index) => {
-      gsap.to(cardRef.current[index], {
-        width: "50%",
-        ease: "power1.out",
-        duration: 2,
-        scrollTrigger: {
-          trigger: cardRef.current[index],
-          start: "top-=25% center",
-          end: "top center", 
-          scrub: 0.02,
-          markers: false,
-        },
-      });
-
-      gsap.to(imagesRef.current[index], {
-        opacity: 1,
-        duration: 3,
-        scrollTrigger: {
-          trigger: cardRef.current[index],
-          start: "top+=10rem center",
-          end: "top+=100rem center",
-          scrub: 0.02,
-          markers: false,
-        },
-      });
-    });
-  }, []);
 
   
 
