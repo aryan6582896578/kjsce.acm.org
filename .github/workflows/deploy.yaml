@@ -1,4 +1,4 @@
-name: Deploy React App to cPanel
+name: Deploy Next.js App to cPanel
 
 on:
   push:
@@ -16,13 +16,13 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18' 
+        node-version: '18'
 
     - name: Install dependencies
       run: npm install
 
-    - name: Build React app
-      run: npm run build
+    - name: Build Next.js app
+      run: npm run build 
 
     - name: Deploy files to cPanel via SSH
       env:
@@ -32,7 +32,7 @@ jobs:
         SSH_PORT: ${{ secrets.SSH_PORT }}
       run: |
         mkdir -p ~/.ssh
-        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/github_cpanel_key 
+        chmod 600 ~/.ssh/github_cpanel_key 
         ssh-keyscan -p $SSH_PORT $SSH_HOST >> ~/.ssh/known_hosts
-        scp -P $SSH_PORT -r ./dist/* $SSH_USER@$SSH_HOST:~/public_html
+        scp -P $SSH_PORT -r ./.next/* $SSH_USER@$SSH_HOST:~/public_html
