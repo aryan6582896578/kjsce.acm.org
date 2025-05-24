@@ -36,8 +36,12 @@ const TeamCard = ({ team }) => {
 
   return (
     <div className="relative flex flex-col items-center w-full justify-center md:px-16">
-      <div className="text-4xl w-fit text-center uppercase font-black dark:text-white text-white px-8 py-4 mb-4 md:mb-8 border-b-cyan-400 border-b-2">{team.teamName}</div>
-      <div className="box w-full flex flex-wrap justify-around gap-8">
+
+      {team.teamName!=="CORES" && <div className="text-4xl w-fit text-center uppercase font-black dark:text-white text-white px-8 py-4 mb-4 md:mb-8 border-b-cyan-400 border-b-2">{team.teamName}</div>}
+      
+      
+
+      <div className="box w-full flex flex-wrap justify-around gap-8 mt-5">
         {team.members.map((member, index) => (
           <div key={index} className="text-center cursor-pointer relative w-64 group" onClick={() => handleMemberClick(member)}>
             <img src={member.img} alt={member.firstName} className="rounded-xl h-64 aspect-square transition-transform duration-300"  />
