@@ -21,13 +21,12 @@ function Event() {
                         {event.title}
                     </div>
                     <p className='text-1xl md:text-2xl text-white text-justify sm:pl-4'>Date: {event.date}</p>
-                    
-                    <div >
-                      {event.sponsors?<Sponsors sponsorList={event.sponsors}/>:""}
-                    </div>
-                    <p className='text-1xl md:text-2xl text-white text-justify sm:p-4 pt-4'>
+                    <p className='text-1xl md:text-2xl text-white text-justify sm:p-4 pt-4 '>
                         {event.description}
                     </p>
+                    <div>
+                      {event.sponsors?<Sponsors sponsorList={event.sponsors}/>:""}
+                    </div>
                 </div>
             </div>
         ))
