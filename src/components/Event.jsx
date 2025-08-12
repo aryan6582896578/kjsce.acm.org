@@ -1,5 +1,6 @@
 import React from 'react';
 import events from "../data/events.json";
+import Sponsors from './Sponsors';
 
 function Event() {
   return (
@@ -9,9 +10,9 @@ function Event() {
             events.map((event, index) => (
             <div key={index} className='flex flex-col lg:flex-row rounded-2xl w-full mb-8 '>
                 <img
-                    src={event.image}
+                    src={event.imageUrl}
                     alt='Event'
-                    className={`xl:w-1/2 lg:w-1/3 w-full h-auto rounded-2xl ${index % 2 !== 0 ? 'lg:order-2' : ''}`}
+                    className={`xl:w-1/2 lg:w-1/3 w-full h-[100%] mt-auto mb-auto rounded-2xl ${index % 2 !== 0 ? 'lg:order-2' : ''}`}
                 />
                 <div className="h-64 md:w-20 w-10  bg-blue-600 blur-[90px] absolute top-[145rem] mt-96 left-0"></div>
                 <div className="h-64 md:w-20 w-10 bg-blue-600 blur-[90px] absolute md:top-[115rem] top-[100rem] mt-96 right-0"></div>
@@ -20,6 +21,10 @@ function Event() {
                         {event.title}
                     </div>
                     <p className='text-1xl md:text-2xl text-white text-justify sm:pl-4'>Date: {event.date}</p>
+                    
+                    <div >
+                      {event.sponsors?<Sponsors sponsorList={event.sponsors}/>:""}
+                    </div>
                     <p className='text-1xl md:text-2xl text-white text-justify sm:p-4 pt-4'>
                         {event.description}
                     </p>

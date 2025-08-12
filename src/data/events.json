@@ -3,24 +3,31 @@
     "title": "Escape Sequence",
     "date": "08-04-2025",
     "description": "Think fast, solve faster! KJSCE ACM presents Escape Sequence, THE high-stakes tech escape room where logic,problem-solving, and speed are your keys to victory.",
-    "image":"/assets/Escape_Sequence.jpg"
+    "image":"/assets/Escape_Sequence.jpg",
+    "imageUrl":"https://res.cloudinary.com/dz9lsudey/image/upload/v1755012804/Escape_Sequence_bcacbt.jpg"
   },
   {
     "title": "Into the Webverse",
     "date": "28-01-2025",
     "description": "KJSCE-ACM is bringing you the exclusive Web Development Masterclass to help you get your much needed head-start in the world of programming ! Don't just watch - code along! ",
-    "image":"/assets/Into_the_Webverse.png"
+    "image":"/assets/Into_the_Webverse.png",
+    "imageUrl":"https://res.cloudinary.com/dz9lsudey/image/upload/v1755012805/Into_the_Webverse_kpzstq.png"
   },
   {
     "title": "Artemis",
     "date": "15-10-2024",
     "description": "Artemis, brought to you by KJSCE ACM Student Chapter, is a fun and dynamic frontend mini-hackathon. It's all about unleashing your creativity in web development—crafting cool designs, building functional frontends, and tackling unique challenges. Whether you're a pro or just starting out, it's a great chance to learn, create, and win!",
-    "image":"/assets/Artemis.jpg"
+    "image":"/assets/Artemis.jpg",
+    "imageUrl":"https://res.cloudinary.com/dz9lsudey/image/upload/v1755012639/Artemis_j9dnvm.jpg",
+    "sponsors":["/sponsor/Zapz.png","/sponsor/BlueSquirrel.png","/sponsor/SnackRack.jpg","/sponsor/InterviewBuddy.png","/sponsor/Beeceptor.png"]
   },
   {
     "title": "Beyond the Classroom",
     "date": "04-09-2024",
     "description": "Beyond the Classroom, conducted by the students of KJSCE ACM, brought together 150+ first-year students for an engaging session on Hackathons, Git, GitHub, and Competitive Programming. The event aimed to simplify key tech concepts and inspire students to explore the world of coding and innovation.",
-    "image":"/assets/BTC.jpg"
+    "image":"/assets/BTC.jpg",
+    "imageUrl":"https://res.cloudinary.com/dz9lsudey/image/upload/v1755012640/BTC_u6fb31.jpg",
+    "sponsors":["/sponsor/Sip&Smile.jpg","/sponsor/ConsoleGaming.jpg","/sponsor/HouseOfDelicious.png","/sponsor/Love&Latte.png","/sponsor/MinistryOfGames.png","/sponsor/smootheory.png"]
+    
   }
 ]
