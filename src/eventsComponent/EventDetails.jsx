@@ -1,55 +1,6 @@
-// import { useEffect, useState } from "react";
-// import { useParams, useNavigate } from "react-router";
-// import events from "../data/events.json";
-// export default function EventDetails() {
-//   const params = useParams();
-//   let event = events.find((x) => x.code === params.eventName);
-
-//   return (
-//     <div className="flex flex-col  w-[100%] h-[100%]">
-//       <div className="flex h-screen text-white">
-//         <div className="w-[40%] h-auto mt-[60px] mb-auto ml-[20px] flex flex-col ">
-//           <img className="object-scale-down rounded-[5px] min-w-[30%] max-w-[50%] ml-auto mr-[10%] hover:border-white border-[2px] cursor-pointer border-transparent duration-[1s]" src={event?.imageUrl} draggable={false} />
-//        {event?.sponsors?   <div className="min-w-[30%] max-w-[50%] ml-auto mr-[10%] w-full mt-[10px]">
-//             <div className="text-center text-[20px] font-semibold hover:underline cursor-pointer">SPONSORS</div>
-//             <div className="flex flex-wrap justify-center gap-4 align-middle ">
-//               {event?.sponsors?.map((x, y) => (
-//             <div className=" w-[90px] mt-auto mb-auto" key={y}>
-//               <img src={x} className="hover:border-white border-[2px] cursor-pointer border-transparent duration-[1s] rounded-[5px]" draggable={false}/>
-//             </div>
-//           ))}
-//             </div>
-//           </div> :""}
-//         </div>
-//         <div className="w-[60%] mt-[40px]">
-//           <div className="text-[60px] font-semibold p-0 m-0 cursor-pointer hover:text-blue-500/80">
-//             {event?.title}
-//           </div>
-//           <div className="flex mb-[30px] mt-[30px] font-semibold h-fit ">
-//             <div className=" h-[50px] flex flex-col w-[50px]  rounded-[5px] text-center font-semibold border-cyan-400 border-[2px] border-t-0">
-//               <div className="bg-cyan-400 rounded-t-[4px] uppercase">{event?.month}</div>
-//               <div className="">{event?.date}</div>
-//             </div>
-//             <div className=" ml-[20px] rounded-[5px] hover:underline cursor-pointer">
-//               <div className="">{event?.fullDate} {event?.venue}</div>
-//               <div className="">{event?.time}</div>
-//             </div>
-//           </div>
-//           <div className="">
-//             <div className="text-cyan-400 font-semibold text-[30px]">About Event</div>
-//             <div className="leading-relaxed">{event?.description}</div>
-//           </div>
-//         </div>
-
-//       </div>
-//       <div className="bg-pink-900 w-full">gallery</div>
-//     </div>
-//   );
-// }
-import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import events from "../data/events.json";
-import Navbar from "../components/Navbar";
+
 export default function EventDetails() {
 
   const params = useParams();
